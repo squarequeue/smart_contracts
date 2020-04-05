@@ -1,7 +1,17 @@
 pragma solidity 0.5.14;
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/d864228624e3661eaf10b7d00995110116e51094/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/d864228624e3661eaf10b7d00995110116e51094/contracts/token/ERC20/ERC20Burnable.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/d864228624e3661eaf10b7d00995110116e51094/contracts/token/ERC20/ERC20Detailed.sol";
+
+/**
+ * @title SQ IEO token is issued by inheriting ERC20 Token of OpenZeppelin. Transparency was secured with the simplest code.
+ * @notice Token swap will proceed in the future. Keep your IEO tokens well.
+ * @author SquareQueue - SquareQueue@gmail.com https://github.com/squarequeue
+ *
+ * Unsold SQ coins at IEO will be burned out. There is no SQ supply other than IEO and StakeHoler(like POS) rewards.
+ * SQ team will be allocated 5% SQ coins after 2years. Befor That time, it is 0%
+ * Max supply is 1 billion and IEO supply is 450 million.
+ */
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v2.5.0/contracts/token/ERC20/ERC20Burnable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract SQ_IEO_token is ERC20, ERC20Detailed, ERC20Burnable {
     uint8 public constant DECIMALS = 18;
