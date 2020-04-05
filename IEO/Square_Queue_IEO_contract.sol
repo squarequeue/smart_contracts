@@ -9,9 +9,9 @@ pragma solidity 0.5.14;
  * SQ team will be allocated 5% SQ coins after 2years. Befor That time, it is 0%
  * Max supply is 1 billion and IEO supply is 450 million.
  */
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v2.5.0/contracts/token/ERC20/ERC20Burnable.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Burnable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract SQ_IEO_token is ERC20, ERC20Detailed, ERC20Burnable {
     uint8 public constant DECIMALS = 18;
